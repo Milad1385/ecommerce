@@ -1,0 +1,167 @@
+/* start slide */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.header-wrapper {
+  height: 550px;
+}
+
+.header-wrapper img,
+.category-slider img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+
+.slider-item {
+  position: relative;
+  height: 100%;
+}
+
+.slider-box {
+  position: absolute;
+  top: 30%;
+  animation: Scale 0.3s forwards;
+}
+
+.slider-box.right {
+  right: 80px;
+}
+
+.slider-box.left {
+  left: 80px;
+}
+
+.slider-box__title {
+  color: #000;
+  font-size: 45px;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-width: 508px;
+}
+
+.slider-box__desc {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 10px 0 0;
+}
+
+.slider-btn__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-box__btn {
+  background-color: #2f415d;
+  outline: none;
+  width: 140px;
+  font-size: 14px;
+  padding: 15px 25px;
+  margin-top: 25px;
+  border: none;
+}
+
+.slider-box__btn a {
+  color: white;
+}
+
+.Wommen {
+  background-color: #e96f84;
+  border: none;
+  width: 160px;
+}
+
+.swiper-pagination-bullet {
+  line-height: 0;
+  font-size: 0;
+  background: 0 0;
+  cursor: pointer;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  text-indent: -9999px;
+  padding: 0;
+  border-radius: 50px;
+  border: 1px solid #2f415d;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -ms-transition: 0.2s;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2f415d;
+}
+
+/* finish slide */
+@media (max-width: 1280px) {
+  .slider-item img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+  .header-wrapper {
+    height: 256px;
+  }
+
+  .slider-box__title {
+    max-width: 220.7px;
+  }
+
+  .slider-box__desc {
+    display: none;
+  }
+
+  .slider-box.right {
+    right: 10px;
+  }
+
+  .slider-box.left {
+    left: 10px;
+  }
+
+  .header-wrapper img {
+    width: 124%;
+    height: 260px;
+  }
+
+  .slider-box__btn {
+    max-width: 83px !important;
+    height: 30px;
+    font-size: 12px;
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .slider-box {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .slider-box.slider-box.right {
+    width: 193px;
+  }
+
+  .Wommen {
+    width: 250px;
+  }
+}
