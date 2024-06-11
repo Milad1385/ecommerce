@@ -1,0 +1,169 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
+
+.breadcrumb {
+  background-color: #f0f0f0;
+  height: 65px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.breadcrumb ul li a{
+    color: black;
+}
+.main {
+  padding: 40px 0;
+}
+
+.product_img {
+  width: 100%;
+  height: 550px;
+}
+
+.product_sub-img {
+  width: 100%;
+  height: 100px;
+}
+
+.product__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bi-star {
+  color: #ffb503;
+}
+
+.bi-star-fill {
+  color: #ffb503;
+}
+
+.product__rate {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.col-7 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product__feature {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stock {
+  color: green;
+  font-weight: 400;
+}
+
+.product__feature-name {
+  font-weight: 500;
+}
+
+.discount-price {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+  text-decoration: line-through;
+}
+.price {
+  font-size: 23px;
+  font-weight: 500;
+  color: red;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product_detail {
+  color: rgb(66, 66, 66);
+  line-height: 25px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 25px 0;
+}
+
+.color-name {
+  font-weight: 600;
+}
+
+.colors,
+.boxs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border: 2px solid rgb(191, 191, 191);
+}
+
+.size-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(191, 191, 191);
+}
+
+.counts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.count-box {
+  border: 2px solid rgb(191, 191, 191);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  padding: 15px 0;
+}
+
+.counts button {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #e96f84;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+}
+
+.product-buy {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #2f415d;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+}

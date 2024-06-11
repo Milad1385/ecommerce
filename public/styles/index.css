@@ -364,6 +364,13 @@
   text-transform: uppercase;
 }
 
+.products-container {
+  display: none;
+}
+
+.products-container.active {
+  display: grid;
+}
 /* finish products */
 
 /* start flat */
