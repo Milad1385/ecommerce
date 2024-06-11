@@ -345,7 +345,7 @@
   .copyright-container {
     flex-direction: column-reverse;
     gap: 20px;
-    padding-bottom: 67px !important;
+    padding-bottom: 23px !important;
   }
 
   .site-scroll {
