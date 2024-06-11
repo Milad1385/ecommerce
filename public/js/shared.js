@@ -4,6 +4,7 @@ window.addEventListener("load", () => {
   const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
   const siteScrollElem = document.querySelector(".site-scroll");
   const navbar = document.querySelector(".navbar");
+  const closeMenu = document.querySelector(".x-mark");
   const modalCloseElem = document.querySelector(".accident__body .bi-x");
 
   mobileMenuIcon?.addEventListener("click", () => showMenu());
@@ -16,23 +17,6 @@ window.addEventListener("load", () => {
       left: 0,
       behavior: "smooth",
     });
-  });
-
-  window.addEventListener("scroll", (e) => {
-    if (window.scrollY > 20) {
-      siteScrollElem.classList.add("active");
-    } else {
-      siteScrollElem.classList.remove("active");
-    }
-
-    if (!mobileMenu.classList.contains("show")) {
-      if (window.scrollY > 102) {
-        navbar.classList.add("active");
-      } else {
-        navbar.classList.remove("active");
-      }
-      console.log();
-    }
   });
 
   modalCloseElem.addEventListener("click", (e) => {
@@ -49,6 +33,10 @@ window.addEventListener("load", () => {
     mobileMenu.classList.remove("show");
     overlay.classList.remove("show");
   }
+
+  closeMenu.addEventListener("click", () => {
+    hideMenu();
+  });
 
   const swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,

@@ -209,13 +209,9 @@
 }
 
 .footer__mobile-menu {
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  right: 0;
-  left: 0;
   z-index: 300;
-  overflow: auto hidden;
-  width: 100%;
   padding: 8px 20px;
   height: 50px;
   background: #fff;
@@ -223,6 +219,7 @@
   transition: transform 0.25s;
   color: black;
   display: none;
+  width: 100% !important;
 }
 
 .footer__body .accordion-button::after {
@@ -259,7 +256,7 @@
   bottom: 0;
   -webkit-animation: 15s infinite movebottom;
   animation: 15s infinite movebottom;
-  z-index: 999;
+  z-index: 500;
   color: black;
 }
 
@@ -290,14 +287,14 @@
   font-size: 12px;
 }
 
-.accident__body{
+.accident__body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   position: relative;
 }
 
-.accident__body .bi-x{
+.accident__body .bi-x {
   position: absolute;
   top: 0;
   right: 0;
@@ -368,11 +365,11 @@
     display: block;
   }
 
-  .newsletter{
+  .newsletter {
     display: block;
   }
 
-  .newsletter__right{
+  .newsletter__right {
     margin: 10px auto;
   }
 }

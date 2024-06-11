@@ -1,8 +1,10 @@
+
 /* --- start ads slider --- */
 .ads-slider {
   background-color: #000;
   color: white;
   padding: 7px 0;
+  overflow: hidden;
 }
 
 .scrolling-text-item a {
@@ -41,7 +43,6 @@
   align-items: center;
   gap: 6px;
 }
-
 
 /* Apply the animation to the text items */
 .scrolling-text-inner > div {
@@ -177,13 +178,10 @@
   position: relative;
   justify-content: space-between;
   box-shadow: 0 0 15px rgba(5, 0, 0, 0.1);
-}
-
-.navbar.active{
-  position: fixed;
+  position: sticky;
   top: 0;
+  z-index: 500;
   background-color: white;
-  z-index: 999;
 }
 
 .nav-menu {
@@ -420,9 +418,6 @@
 }
 
 /* finish navbar */
-
-
-
 
 /* responsive */
 
