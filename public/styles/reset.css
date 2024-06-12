@@ -158,3 +158,28 @@ body {
 *{
   user-select: none;
 }
+
+
+.breadcrumb {
+  background-color: #f0f0f0;
+  height: 65px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.breadcrumb ul li a {
+  color: black;
+}

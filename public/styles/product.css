@@ -113,7 +113,7 @@
   margin-top: 20px;
   cursor: pointer;
 }
-.count-box {
+.count-boxs {
   border: 2px solid rgb(191, 191, 191);
   display: flex;
   align-items: center;
@@ -484,7 +484,7 @@ textarea {
     font-size: 16px;
   }
 
-  .count-box {
+  .count-boxs {
     padding: 10px 0;
   }
 
@@ -510,7 +510,7 @@ textarea {
     font-size: 12px;
   }
 
-  .count-box {
+  .count-boxs {
     width: 40%;
   }
 
