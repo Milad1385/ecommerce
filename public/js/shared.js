@@ -6,10 +6,17 @@ window.addEventListener("load", () => {
   const navbar = document.querySelector(".navbar");
   const closeMenu = document.querySelector(".x-mark");
   const modalCloseElem = document.querySelector(".accident__body .bi-x");
+  const shoppingCardElem = document.querySelector(".shopping-card");
+  const basketMenu = document.querySelector(".basket");
+  const closeBasketMenuIcon = document.querySelector(".close-basket");
 
   mobileMenuIcon?.addEventListener("click", () => showMenu());
 
-  overlay?.addEventListener("click", () => hideMenu());
+  overlay?.addEventListener("click", () => {
+    hideMenu();
+    basketMenu.classList.remove("active");
+    overlay.classList.remove("active");
+  });
 
   siteScrollElem.addEventListener("click", () => {
     window.scrollTo({
@@ -19,8 +26,19 @@ window.addEventListener("load", () => {
     });
   });
 
+  shoppingCardElem?.addEventListener("click", () => {
+    basketMenu.classList.add("active");
+    overlay.classList.add("active");
+  });
+
   modalCloseElem.addEventListener("click", (e) => {
     e.target.parentElement.parentElement.parentElement.remove();
+  });
+
+  closeBasketMenuIcon.addEventListener("click", (e) => {
+    console.log("click");
+    basketMenu.classList.remove("active");
+    overlay.classList.remove("active");
   });
 
   function showMenu() {

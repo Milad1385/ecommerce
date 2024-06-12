@@ -1,4 +1,3 @@
-
 /* --- start ads slider --- */
 .ads-slider {
   background-color: #000;
@@ -419,6 +418,225 @@
 
 /* finish navbar */
 
+/* start basket */
+.basket {
+  width: 350px;
+  position: fixed;
+  bottom: 0;
+  right: -350px;
+  top: 0;
+  background-color: white;
+  z-index: 7000;
+  transition: 0.5s all ease;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.basket.active {
+  right: 0;
+}
+
+.basket .bi-x {
+  font-size: 22px;
+}
+
+.basket .header-text {
+  color: #171717;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
+.basket__left {
+  display: flex;
+  gap: 20px;
+}
+
+.basket__body {
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.basket__body img {
+  width: 67px;
+  height: 97px;
+}
+
+.basket__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.basket__title {
+  color: #171717;
+  font-size: 14px;
+  white-space: normal;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0;
+}
+.basket__size {
+  color: #6c757d;
+  font-size: 13px;
+}
+.basket__price {
+}
+
+.counts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.count-box {
+  border: 1px solid rgb(191, 191, 191);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80px;
+  padding: 10px 0;
+}
+
+.counts button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #e96f84;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+}
+
+.basket-cart {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.basket-cart:not(:first-child) {
+  padding: 20px 0;
+}
+
+.basket-cart:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.basket-cart:first-child {
+  padding-bottom: 20px;
+}
+.basket-cart__action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.delivery-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.delivery-card p {
+  font-size: 13px;
+}
+
+.basket-progress {
+  background-color: #f6f6f6;
+  padding: 15px 20px;
+}
+
+.basket-total-price {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.total-price {
+  color: #2f415d;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 20px;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+.form-check-input {
+  margin: 0;
+}
+
+.progress-bar {
+  background-color: rgba(41, 51, 85, 0.7);
+}
+
+.basket__btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.basket__btns button {
+  width: 100%;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  background-color: #2f415d;
+  color: #fff;
+  border: 1px solid #2f415d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: normal;
+  white-space: normal;
+  opacity: 1;
+  outline: 0 !important;
+  box-shadow: none !important;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.basket-view-btn {
+  background-color: #e96f84 !important;
+  color: #fff !important;
+  border: 1px solid #e96f84 !important;
+}
+
+.basket__btns button a {
+  color: white;
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 0.5;
+}
+/* finish basket */
+
 /* responsive */
 
 @media (max-width: 1280px) {
@@ -462,6 +680,34 @@
 
   .localization {
     gap: 10px;
+  }
+
+  .delivery-card p {
+    font-size: 10px;
+  }
+
+  .form-check-label {
+    font-size: 12px;
+  }
+
+  .basket__title {
+    font-size: 12px;
+  }
+
+  .basket__size {
+    font-size: 10px;
+  }
+
+  .basket__price {
+    font-size: 12px;
+  }
+
+  .progress {
+    height: 10px;
+  }
+
+  .basket {
+    width: 292px;
   }
 }
 
