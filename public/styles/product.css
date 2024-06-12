@@ -1,6 +1,7 @@
 @import url("reset.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("productCard.css");
 
 .breadcrumb {
   background-color: #f0f0f0;
@@ -390,6 +391,38 @@ textarea {
   padding: 15px;
   margin-top: 20px;
 }
+
+/* finish review section */
+
+/* start product slider */
+
+.category__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category__header-title {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  margin: 5px 0 0;
+  display: block;
+  color: #888;
+  font-size: 18px;
+}
+
+.category__header-desc {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 auto 10px;
+  text-transform: uppercase;
+}
+
+.products{
+  margin-top: 60px;
+}
+
 @media (max-width: 992px) {
   .product_img {
     height: 322px;
@@ -501,31 +534,32 @@ textarea {
     width: 55%;
   }
 
-  .review__title{
+  .review__title {
     font-size: 16px;
   }
 
-  .review__desc{
+  .review__desc {
     font-size: 12px;
   }
 
-  .review__body{
+  .review__body {
     font-size: 12px;
   }
 
-  .review-form__desc{
+  .review-form__desc {
     line-height: 25px;
   }
 
-  .form-control ,.form-select{
+  .form-control,
+  .form-select {
     font-size: 14px;
   }
 
-  .form-review__btn{
+  .form-review__btn {
     font-size: 14px;
   }
 
-  .tabMenu{
+  .tabMenu {
     margin: 30px 0;
   }
 }
