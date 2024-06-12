@@ -196,7 +196,7 @@
 
 .tabMenu {
   display: none;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .tabMenu.active {
@@ -523,5 +523,9 @@ textarea {
 
   .form-review__btn{
     font-size: 14px;
+  }
+
+  .tabMenu{
+    margin: 30px 0;
   }
 }
