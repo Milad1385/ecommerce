@@ -278,12 +278,12 @@
   }
 
   .counts button {
-    padding: 12px 0;
+    padding: 13px 0;
     font-size: 14px;
   }
 
   .product-buy {
-    padding: 12px 0;
+    padding: 13px 0;
     font-size: 14px;
   }
 
@@ -295,9 +295,6 @@
     padding: 8px 12px;
   }
 
-  .bi-eye {
-    font-size: 14px;
-  }
 
   .tab {
     font-size: 12px;
