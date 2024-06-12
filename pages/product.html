@@ -383,12 +383,12 @@
             <a href="/index.html">Home</a> <i class="bi bi-chevron-right"></i>
           </li>
           <li>
-            <a href="/index.html">Product Title</a></i>
+            <a href="/index.html">Product Title</a>
           </li>
         </ul>
       </div>
       <div class="row">
-        <div class="col-5">
+        <div class="col-12 col-md-5">
           <div class="swiper mainSwiper">
             <div class="swiper-wrapper header-wrapper">
               <div class="swiper-slide">
@@ -477,7 +477,7 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-12 col-md-7 product__detail">
           <h1 class="product__title">Product Title</h1>
           <div class="product__rate">
             <div class="product-card__stars">
@@ -523,44 +523,78 @@
             repudiandae dolore quas nulla.
           </div>
 
-          <!-- colors -->
-          <div>
-            <h3>Color : <span class="color-name">Blue</span></h3>
-            <!-- color list -->
-            <div class="colors">
-              <div class="color-box"></div>
-              <div class="color-box"></div>
-              <div class="color-box"></div>
+          <!-- counts & price -->
+          <div class="price-box">
+            <div class="counts">
+              <div class="count-box">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+              </div>
+              <button>ADD TO CARD</button>
             </div>
+
+            <button class="product-buy">BUY IT NOW</button>
           </div>
 
-          <!-- size -->
-
-          <div>
-            <h3>Size : <span class="color-name">XL</span></h3>
-            <!-- color list -->
-            <div class="boxs">
-              <div class="size-box">XS</div>
-              <div class="size-box">S</div>
-              <div class="size-box">M</div>
-              <div class="size-box">L</div>
-              <div class="size-box">XL</div>
-            </div>
+          <!-- view stat -->
+          <div class="view-box">
+            <i class="bi bi-eye"></i>
+            <span class="view__number">12</span>
+            <p>People are looking for this Product</p>
           </div>
-
-          <!-- counts -->
-          <div class="counts">
-            <div class="count-box">
-              <span>-</span>
-              <span>1</span>
-              <span>+</span>
-            </div>
-            <button>ADD TO CARD</button>
-          </div>
-
-          <button class="product-buy">BUY IT NOW</button>
         </div>
       </div>
+
+      <!-- product tabs -->
+      <div class="tabs">
+        <div class="tab active" data-name="desc">DESCRIPTION</div>
+        <div class="tab" data-name="info">INFORMATION</div>
+        <div class="tab" data-name="review">REVIEWS</div>
+      </div>
+
+      <!-- tab menu -->
+      <div class="tabMenu desc active">
+        <p class="product-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, vero
+          impedit. Delectus nemo dicta commodi tempore minus sapiente
+          voluptatibus rem, modi molestias dignissimos iusto accusamus dolor
+          provident. Officiis, fugit neque. Doloribus iusto quasi reprehenderit
+          harum id quisquam fugiat aut dolorum laudantium? Dolorum ex
+          repudiandae in libero a similique labore impedit facere modi hic
+          reiciendis saepe quos, voluptatum, consequuntur, debitis explicabo!
+          Nulla, non. Ducimus iure a voluptatum quaerat, beatae nisi ullam neque
+          tempore odit maiores aliquid hic autem eos nesciunt quos. Quaerat
+          doloribus veniam officia? Totam minima aliquid debitis dicta neque.
+        </p>
+      </div>
+      <div class="tabMenu info">
+        <table class="table table-striped table-bordered">
+          <tbody>
+            <tr>
+              <td class="info-name p-3">Product name</td>
+              <td class="info-value p-3">Product Title</td>
+            </tr>
+            <tr>
+              <td class="info-name p-3">Product size</td>
+              <td class="info-value p-3">size of this 12 * 12 * 12</td>
+            </tr>
+            <tr>
+              <td class="info-name p-3">company</td>
+              <td class="info-value p-3">adidas</td>
+            </tr>
+            <tr>
+              <td class="info-name p-3">Create at</td>
+              <td class="info-value p-3">2024</td>
+            </tr>
+            <tr>
+              <td class="info-name p-3">Price</td>
+              <td class="info-value p-3">45.00$</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabMenu review">review</div>
     </main>
     <!----------------------  main --------------------->
 
@@ -861,25 +895,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../public/js/shared.js"></script>
     <script src="../public/js/index.js"></script>
-    <script>
-      const secondSlider = new Swiper(".secondSwiper", {
-        slidesPerView: 5,
-        spaceBetween: 15,
-        // Navigation arrows
-      });
-
-      const mainSwiper = new Swiper(".mainSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: secondSlider,
-        },
-      });
-    </script>
+    <script src="./../public/js/product.js"></script>
   </body>
 </html>
