@@ -1,0 +1,167 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
+
+.main {
+  padding: 60px 0;
+}
+.shipping,
+.delivery-method,
+.order,
+.discount,
+.product-summery {
+  border: 1px solid #e6e6e6 !important;
+  padding: 25px;
+}
+
+.shipping-header h3,
+.delivery__title,
+.order__title,
+.product__title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.shipping-header a {
+  color: black;
+  text-decoration: underline;
+}
+
+.shipping-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.form-control {
+  margin-top: 10px;
+}
+
+.shipping span {
+  color: red;
+}
+
+.shipping-address {
+  margin-top: 10px;
+}
+
+.shipping-apartment {
+  margin-top: 20px;
+}
+
+.shipping .checkbox-container {
+  padding: 10px 0 0 0;
+}
+
+.form-check:not(:first-child) {
+  margin-top: 10px;
+}
+
+.order textarea {
+  height: 150px;
+}
+
+.order p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.newsletter__input {
+  border: 1px solid #e6e6e6;
+}
+
+.discount button {
+  background-color: #2f415d;
+}
+
+.basket-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+td {
+  text-align: center;
+}
+
+.basket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+}
+
+.basket-body img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.basket-item-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basket-item-box:not(:first-child) {
+  margin-top: 25px;
+}
+
+.basket-item-box:first-child{
+    margin-top: 15px;
+}
+
+.basket-item-box .bi-x {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 567px) {
+  .basket-body {
+    font-size: 14px;
+  }
+
+  .basket-body img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .basket-header {
+    font-size: 14px;
+  }
+
+  .breadcrumb {
+    height: 48px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 30px 10px;
+  }
+
+  .delivery-method {
+    margin-top: 25px;
+  }
+
+  .discount p {
+    font-size: 12px;
+  }
+
+  .discount .newsletter__right {
+    margin: 0;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
