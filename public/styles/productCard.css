@@ -87,10 +87,10 @@
 }
 
 .products-container {
-  display: none;
+  display: none !important;
 }
 
 .products-container.active {
-  display: grid;
+  display: grid !important;
 }
 /* finish products */
